@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanchit Sharma | Personal Manifesto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent-color: #00FFFF;
+            --bg-color: #121212;
+            --text-color: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h1, h2 {
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            max-width: 800px;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            position: relative;
+        }
+
+        .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            animation: underline 1s ease forwards;
+        }
+
+        @keyframes underline {
+            to {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+            }
+
+            nav ul li {
+                margin: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#core-values">Core Values</a></li>
+            <li><a href="#breaking-boundaries">Breaking Boundaries</a></li>
+            <li><a href="#sacred-truths">Sacred Truths</a></li>
+            <li><a href="#pursuit">Pursuit</a></li>
+            <li><a href="#ideal-day">Ideal Day</a></li>
+            <li><a href="#world-shaping">World Shaping</a></li>
+            <li><a href="#quotes">Quotes</a></li>
+        </ul>
+    </nav>
+
+    <section id="core-values">
+        <h1>My Core Values</h1>
+        <p>I believe in <span class="highlight">freedom</span> - both financial and personal - giving me the ability to explore new ideas, take risks, and control my own journey. I thrive on <span class="highlight">curiosity</span>, always seeking to push boundaries and discover new paths. Leaving my consulting job to fully dive into the world of crypto was one of the biggest leaps of faith I've taken, and it taught me the power of believing in myself.</p>
+        <p><span class="highlight">Community and connection</span> are essential to my happiness. Whether it's through shared experiences or just being present, I value the joy that comes from meaningful relationships and love to make people laugh.</p>
+        <p>Living with <span class="highlight">integrity</span> is my non-negotiable. I strive to have a positive impact without causing harm to others, leading a life that is not only fulfilling for myself but also uplifting for those around me.</p>
+    </section>
+
+    <section id="breaking-boundaries">
+        <h2>Breaking Boundaries</h2>
+        <p>I've broken 5 <span class="highlight">Guinness World Records</span> in memory sports, pushing my mental and physical limits in ways I never thought possible. Whether it's memorizing 3,141 digits of Euler's Number or holding my breath underwater to memorize 67 playing cards, I've always sought to push myself beyond the norm.</p>
+        <p>Check out a summary of my achievements here: <a href="https://bit.ly/GWR_Sanchit_Sharma" target="_blank" rel="noopener noreferrer">bit.ly/GWR_Sanchit_Sharma</a>.</p>
+    </section>
+
+    <section id="sacred-truths">
+        <h2>Truths I Hold Sacred</h2>
+        <p><span class="highlight">Success should never come at the cost of others.</span> Achieving my goals is important, but it's equally vital to uplift the people around me.</p>
+        <p><span class="highlight">Life isn't just about chasing more - it's about knowing when you've reached "enough."</span> I want to be a present family member, caring for my loved ones and truly being part of their lives. Family, friends, and relationships are my anchors.</p>
+        <p><span class="highlight">Finding balance between ambition and contentment is key to happiness.</span> Progress and peace need to coexist.</p>
+    </section>
+
+    <section id="pursuit">
+        <h2>What I'm Truly in Pursuit Of</h2>
+        <p>I'm always chasing <span class="highlight">personal growth</span> - whether it's exploring new ideas, mastering new skills, or testing the limits of my abilities. I want to continue pushing boundaries while also contributing to the progress of others.</p>
+        <p><span class="highlight">Freedom</span> drives me - the freedom to be curious, to connect with others authentically, and to constantly learn. I'm especially excited about how AI is reshaping the world and its potential to change the way we live, work, and interact.</p>
+        <p>I'm passionate about everything from crypto to memory sports, from gaming to financial independence. Learning never stops for me, and I love diving deep into different worlds, whether that's AI or mastering a new game.</p>
+        <p>I'm in pursuit of <span class="highlight">balance</span> - balancing ambition with joy, innovation with stability, and personal achievement with nurturing strong, loving relationships.</p>
+    </section>
+
+    <section id="ideal-day">
+        <h2>My Ideal Day</h2>
+        <p>• Start with physical activity like badminton, cricket, or a workout to keep my body and mind sharp.</p>
+        <p>• Spend time learning something new, whether it's in tech, physics, AI, or another subject that fascinates me.</p>
+        <p>• Engage in friendly competition with sports like chess or table tennis, fueling my love for strategy and fun.</p>
+        <p>• Share moments with the people I love, whether it's travelling together or watching a great movie or show.</p>
+        <p>• End the day feeling balanced and fulfilled, ready for the next adventure.</p>
+    </section>
+
+    <section id="world-shaping">
+        <h2>The World I Want to Shape</h2>
+        <p>I envision a world where people prioritise <span class="highlight">health, learning, and meaningful connections</span> - where curiosity is celebrated, and communities support one another. Financial freedom, in particular, should enable people to focus on what truly matters: happiness, growth, and enriching the lives of their loved ones.</p>
+        <p>I want to attend major sporting events (the Olympics, Tennis Grand Slams, Cricket World Cups, Chess events), feel the rush of excitement, and live in a world where <span class="highlight">shared experiences bring us closer together</span>.</p>
+    </section>
+
+    <section id="quotes">
+        <h2>Quotes I Live By</h2>
+        <p>"You miss 100% of the shots you don't take." – Wayne Gretzky – Michael Scott</p>
+        <p>"Two roads diverged in a wood, and I—<br>I took the one less traveled by,<br>And that has made all the difference."<br>– Robert Frost, <em>The Road Not Taken</em></p>
+    </section>
+
+    <script>
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    if (entry.target.tagName === 'H1' || entry.target.tagName === 'H2') {
+                        const text = entry.target.textContent;
+                        entry.target.innerHTML = '';
+                        typeWriter(entry.target, text);
+                    }
+                }
+            });
+        }, { threshold: 0.1 });
+
+        // Typewriter effect for headings
+        function typeWriter(element, text, i = 0) {
+            if (i < text.length) {
+                element.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(() => typeWriter(element, text, i), 50);
+            }
+        }
+
+        // Observe all sections and their children
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+            section.querySelectorAll('h1, h2, p').forEach(element => {
+                observer.observe(element);
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
